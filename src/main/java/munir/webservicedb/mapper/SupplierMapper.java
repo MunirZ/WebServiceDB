@@ -1,10 +1,15 @@
 package munir.webservicedb.mapper;
 
+import lombok.RequiredArgsConstructor;
 import munir.webservicedb.model.Supplier;
 import munir.webservicedb.request.SupplierRequest;
 import munir.webservicedb.response.SupplierResponse;
+import org.springframework.stereotype.Service;
 
+@Service
+@RequiredArgsConstructor
 public class SupplierMapper {
+
     public Supplier mapRequestToModel(SupplierRequest request) {
         Supplier supplier = new Supplier();
         supplier.setName(request.getName());

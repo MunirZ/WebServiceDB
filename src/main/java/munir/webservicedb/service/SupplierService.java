@@ -3,9 +3,6 @@ package munir.webservicedb.service;
 import lombok.RequiredArgsConstructor;
 import munir.webservicedb.model.Supplier;
 import munir.webservicedb.repository.SupplierRepository;
-import munir.webservicedb.request.SupplierRequest;
-import org.hibernate.boot.internal.StandardEntityNotFoundDelegate;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
